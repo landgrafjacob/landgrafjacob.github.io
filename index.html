@@ -7,28 +7,32 @@
 </head>
 <body>
 
-<table>
+<table align="center">
 <tr>
-<td id='andyp_pic_box'><img onload="resizeImage()" id='andyp_pic' src="jakepic.jpg"></td>
-<td id='space_box' width=20></td>
-<td id='txt_box'><div id='andyp_txt'>
-<h3> Jacob Landgraf </h3>
 
-<p>
+<td id='txt_box'><div id='txt'>
+<h3 align="right"> Jacob Landgraf </h3>
+
+<p align="right">
 Graduate Student <br>
 <a href="http://math.nd.edu">Department of Mathematics</a><br>
 <a href="http://www.nd.edu">University of Notre Dame</a><br>
-<a href="mailto:jlandgr1@nd.edu">jlandgr1@nd.edu</a> <br>
+<a href="mailto:jlandgr1@nd.edu">jlandgr1@nd.edu</a><br>
+</p>
+    
+<p align="right">
+Advisor: <a href="http://nd.edu/~andyp"> Andy Putman</a>  
 </p>
 
-<p>
-<a href="cv.pdf">curriculum vitae</a>
+<p align="right">
+<a href="papers.html">papers</a>&nbsp;&nbsp;&nbsp;<a href="teaching.html">teaching</a>&nbsp;&nbsp;&nbsp;<a href="cv.pdf">cv</a>
 </p>
-
-<p>
-<a href="papers/">papers</a>&nbsp;&nbsp;&nbsp;<a href="teaching/">teaching</a>
-</p>
+</div>
 </td>
+    
+<td id='space_box' width=20></td>
+
+<td id='pic_box'><img id='pic' src="jakepic.jpg" onload="resizeImage()"></td>
 </tr>
 </table>
 
@@ -37,9 +41,9 @@ Graduate Student <br>
 function resizeImage()
 {
 	var s = document.getElementById('space_box');
-        var t = document.getElementById('andyp_txt');
-        var i = document.getElementById('andyp_pic');
-        var ib = document.getElementById('andyp_pic_box');
+        var t = document.getElementById('txt_box');
+        var i = document.getElementById('pic');
+        var ib = document.getElementById('pic_box');
         var oldHeight = i.height;
         var oldWidth = i.width;
         var aspectRatio = oldWidth / oldHeight;
