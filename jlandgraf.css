@@ -79,7 +79,7 @@ td {
 }
 
 p {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .clear {
@@ -88,20 +88,24 @@ p {
 
 ul {
     list-style: none;
+	list-style-type: circle;
     margin-left: 0;
     padding-left: 1em;
     text-indent: -1em;
+	padding-right: 0.4ex;
 }
 
 li {
     margin-bottom: 1ex;
+	font-size: 20px;
 }
 
-ul li:before {
-    color: #555;
-    content: "\00BB \0020";
-    padding-right: 0.4ex;
-}
+/* ul li:before { */
+    /* color: #555; */
+    /* content: "\00BB \0020"; */
+    /* padding-right: 0.4ex; */
+	/* list-style-type: circle; */
+/* } */
 
 .email {
 }
